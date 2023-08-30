@@ -2,6 +2,7 @@ import "./App.css";
 import axios from "axios";
 import Weather from "./Weather";
 import React, { useState } from "react";
+import { MagnifyingGlass } from "react-loader-spinner";
 
 export default function App(props) {
   let [city, setCity] = useState(null);
@@ -71,6 +72,17 @@ export default function App(props) {
           />
           <input type="submit" value="Search" />
         </form>
+        <MagnifyingGlass
+          visible={true}
+          height="80"
+          width="80"
+          ariaLabel="MagnifyingGlass-loading"
+          wrapperStyle={{}}
+          wrapperClass="MagnifyingGlass-wrapper"
+          glassColor="#c0efff"
+          color="#e15b64"
+        />
+        <br />
         <a href="https://github.com/Carlaji/weather-app-SHECODES">
           Github repository
         </a>
