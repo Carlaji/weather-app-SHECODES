@@ -51,13 +51,15 @@ export default function App(props) {
             wind={weather.wind}
             icon={weather.icon}
           />
-          <a href="#">Github repository</a>
+          <a href="https://github.com/Carlaji/weather-app-SHECODES">
+            Github repository
+          </a>
         </div>
       </div>
     );
   } else {
     return (
-      <div>
+      <div className="App">
         <h1>Weather app🌤️</h1>
         <form onSubmit={handleSubmit}>
           <input
@@ -69,6 +71,9 @@ export default function App(props) {
           />
           <input type="submit" value="Search" />
         </form>
+        <a href="https://github.com/Carlaji/weather-app-SHECODES">
+          Github repository
+        </a>
       </div>
     );
   }
