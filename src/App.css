@@ -1,5 +1,14 @@
 .App {
   text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.App ul {
+  list-style: none;
+}
+
+.App li {
+  margin-bottom: 20px;
 }
 
 .App-logo {
@@ -7,6 +16,10 @@
   pointer-events: none;
 }
 
+#search {
+  background-color: #61dafb5e;
+  border-radius: 5px;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
